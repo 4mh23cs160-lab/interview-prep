@@ -1,0 +1,206 @@
+Here are **clear, exam-ready FAQs on GANs (Generative Adversarial Networks)** — perfect for **college projects, viva, interviews, and reports**.
+
+---
+
+## 📌 Frequently Asked Questions (FAQs) on GAN
+
+---
+
+### 1. **What is a GAN?**
+
+A **GAN (Generative Adversarial Network)** is a deep learning model that generates new data similar to real data using **two neural networks**:
+
+* **Generator**
+* **Discriminator**
+
+They compete with each other in a game-theoretic setup.
+
+---
+
+### 2. **Who introduced GANs and when?**
+
+GANs were introduced by **Ian Goodfellow** and his team in **2014**.
+
+---
+
+### 3. **What are the main components of a GAN?**
+
+* **Generator (G):** Creates fake data
+* **Discriminator (D):** Distinguishes real data from fake data
+* **Adversarial loss:** Measures how well G fools D
+
+---
+
+### 4. **How does a GAN work?**
+
+1. Generator creates fake samples
+2. Discriminator classifies real vs fake
+3. Generator improves to fool Discriminator
+4. Discriminator improves to detect fake
+5. Training continues until generated data looks realistic
+
+---
+
+### 5. **What is the objective function of GAN?**
+
+GANs use a **minimax loss function**:
+
+[
+\min_G \max_D V(D,G)
+]
+
+The Generator minimizes the loss while the Discriminator maximizes it.
+
+---
+
+### 6. **What is the role of the Generator?**
+
+The Generator:
+
+* Takes random noise or input data
+* Produces fake samples
+* Learns to generate realistic outputs
+
+---
+
+### 7. **What is the role of the Discriminator?**
+
+The Discriminator:
+
+* Acts as a binary classifier
+* Outputs probability of real or fake
+* Guides the Generator through feedback
+
+---
+
+### 8. **What is Conditional GAN (cGAN)?**
+
+A **Conditional GAN** generates data **based on a condition**, such as:
+
+* Class label
+* Image
+* Text
+
+Example: Image-to-Image translation (Pix2Pix).
+
+---
+
+### 9. **What is Pix2Pix GAN?**
+
+Pix2Pix is a **conditional GAN** used for **image-to-image translation**, where:
+
+* Input image → Output image
+* Uses **U-Net Generator**
+* Uses **PatchGAN Discriminator**
+
+---
+
+### 10. **What are common applications of GANs?**
+
+* Image generation
+* Image-to-image translation
+* Super-resolution
+* Face synthesis
+* Style transfer
+* Data augmentation
+* Medical imaging
+
+---
+
+### 11. **What is Mode Collapse?**
+
+Mode collapse occurs when:
+
+* Generator produces **limited varieties**
+* Different inputs result in similar outputs
+
+This is a common GAN training problem.
+
+---
+
+### 12. **Why are GANs difficult to train?**
+
+* Unstable training
+* Mode collapse
+* Sensitive to hyperparameters
+* No clear convergence metric
+
+---
+
+### 13. **What is PatchGAN?**
+
+PatchGAN:
+
+* Classifies **small image patches**
+* Improves texture quality
+* Commonly used in image-to-image GANs
+
+---
+
+### 14. **What loss functions are used in GANs?**
+
+* Binary Cross Entropy (BCE)
+* Least Squares Loss (LSGAN)
+* Wasserstein Loss (WGAN)
+
+---
+
+### 15. **What is WGAN?**
+
+**Wasserstein GAN** improves training stability by:
+
+* Using Earth-Mover distance
+* Removing sigmoid activation
+* Adding gradient penalty
+
+---
+
+### 16. **Difference between GAN and Autoencoder?**
+
+| GAN                  | Autoencoder          |
+| -------------------- | -------------------- |
+| Adversarial training | Reconstruction-based |
+| Generates new data   | Compresses data      |
+| Hard to train        | Easy to train        |
+
+---
+
+### 17. **GAN vs Diffusion Models**
+
+| GAN            | Diffusion                 |
+| -------------- | ------------------------- |
+| Fast inference | Slower but better quality |
+| Needs training | Often pretrained          |
+| Can collapse   | Very stable               |
+
+---
+
+### 18. **What datasets are used for GANs?**
+
+* MNIST
+* CIFAR-10
+* CelebA
+* Cityscapes
+* Custom image datasets
+
+---
+
+### 19. **What are real-world GAN examples?**
+
+* Deepfake generation
+* FaceApp
+* NVIDIA StyleGAN
+* Image enhancement tools
+
+---
+
+### 20. **Why are GANs important in GenAI?**
+
+GANs:
+
+* Laid the foundation for generative AI
+* Inspired modern models
+* Enable realistic synthetic data generation
+
+---
+
